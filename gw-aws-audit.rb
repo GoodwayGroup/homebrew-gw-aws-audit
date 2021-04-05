@@ -5,29 +5,29 @@
 class GwAwsAudit < Formula
   desc "A set of commands to audit AWS usage to identify cost savings and security issues."
   homepage "https://goodwaygroup.github.io/gw-aws-audit/"
-  version "1.19.5"
+  version "1.19.6"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.5/gw-aws-audit_1.19.5_darwin_amd64.tar.gz"
-    sha256 "555625a162c4f1ed64c24d1fc6914194f915ea46e1a254b1b3dd397aaffbbe4c"
+    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.6/gw-aws-audit_1.19.6_darwin_amd64.tar.gz"
+    sha256 "4d129c56a8898869f6b0fafbf9586a5dba63a623b12663fd6b501df47f0aa5f1"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.5/gw-aws-audit_1.19.5_darwin_arm64.tar.gz"
-    sha256 "c4b9d892c8ab47ff74817950430a3d5f8845b368e1bdbdfe80d81c0d239b75a3"
+    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.6/gw-aws-audit_1.19.6_darwin_arm64.tar.gz"
+    sha256 "ea0e4340b43e2bbc0997d627981559a519509c301c50d70b23b53938540d5a63"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.5/gw-aws-audit_1.19.5_linux_amd64.tar.gz"
-    sha256 "f5c8664fb0fbbaa24ca474c24b5bcc61312c19d9bd08ea30ab7d95bd3c758fa3"
+    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.6/gw-aws-audit_1.19.6_linux_amd64.tar.gz"
+    sha256 "3c369c17d50ee4ea19f43003435abf3869ac759ec844d5cb96cb2dddcfec26cf"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.5/gw-aws-audit_1.19.5_linux_armv6.tar.gz"
-    sha256 "649f144e74694498c960e5e648938f34866982ed8ca2b68df1921d22c6df3389"
+    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.6/gw-aws-audit_1.19.6_linux_armv6.tar.gz"
+    sha256 "4919a2ee99b8207c10d087ba769cd8daaf30832159b54ba78968893c81778e81"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.5/gw-aws-audit_1.19.5_linux_arm64.tar.gz"
-    sha256 "483dedafdf65a070552cb0ec8552dbc1467293d1de93297a0b0774d57ab54484"
+    url "https://github.com/GoodwayGroup/gw-aws-audit/releases/download/v1.19.6/gw-aws-audit_1.19.6_linux_arm64.tar.gz"
+    sha256 "d3204ec06d4d47cb8171078528d56a0c169ffd732ec155803d1421c766efed07"
   end
 
   def install
